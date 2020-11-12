@@ -101,8 +101,9 @@ function App() {
             <input type="radio" value={formData[number].fourthchoice} id="choice4" name="choice" />
             <label htmlFor="choice4">{formData[number].fourthchoice}</label><br/><br/>
 
-            {number >= 1 && number < 4 ? <button onClick = {subtractNumber} className = 'back'>Back</button>
+            {number >= 1 ? <button onClick = {subtractNumber} className = 'back'>Back</button>
             // : number === 4 ? null 
+            // && number < 4 
             : null}
 
           
